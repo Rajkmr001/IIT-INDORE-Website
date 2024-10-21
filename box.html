@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        #more {display: none;}
+    </style>
+</head>
+<body>
+
+    <p>Here is some text that you can read. <span id="dots">...</span><span id="more">And here is the rest of the text that will be revealed when you click the "Read More" button.</span></p>
+    <button onclick="myFunction()" id="myBtn">Read more</button>
+    <p>Hhhgfhfghjnshdfn <span id="pcc">...</span><span id="moe">Andll dfhghnggbad More" buscdv dfv tton.</span></p>
+    <button onclick="myFunction()" id="acc">Read more</button>
+
+<script>
+function myFunction() {
+    var dots = document.getElementById("dots");
+    var dots = document.getElementById("pcc");
+    var moreText = document.getElementById("more");
+    var moreText = document.getElementById("moe");
+  var btnText = document.getElementById("myBtn");
+  var btnText = document.getElementById("acc");
+
+  if (dots.style.display === "none") {
+    dots.style.display = "inline";
+    btnText.innerHTML = "Read more";
+    moreText.style.display = "none";
+  } else {
+    dots.style.display = "none";
+    btnText.innerHTML = "Read less";
+    moreText.style.display = "inline";
+  }
+}
+</script>
+
+</body>
+</html>
